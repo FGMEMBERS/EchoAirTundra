@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>EchoAir Canard Traveller</label>
+      <enabled type="bool">true</enabled>
+<item>
+        <label>Interior Shading On/off</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/intshading/on</property>
+        </binding>
+      </item>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+      <item>
+        <label>Checklists</label>
+          <binding>
+            <command>dialog-show</command>
+            <dialog-name>checklist</dialog-name>
+          </binding>
+      </item>
+  <item>
+        <label>Autostart</label>
+          <binding>
+            <command>nasal</command>
+            <script>
+# props.globals.getNode("sim/model/battery/batt1connector").removeChild("out"); 
+# props.globals.getNode("sim/model/battery/batt2connector").removeChild("out"); 
+setprop('/sim/model/battery/batt1connector/out', 0);	
+setprop('/sim/model/battery/batt2connector/out', 0);	
+setprop('/controls/engines/engine[0]/magnetos', 3);
+ print( "Press s to start engine" );
+</script>
+          </binding>
+      </item>
+    </menu>
+  </default>
+
+</PropertyList>

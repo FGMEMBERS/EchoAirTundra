@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="Aircraft/Generic/Human/Include/walker-include.xml" >
+
+  <sim>
+
+    <description>EchoAir Tundra</description>
+    <author>D-ECHO (3d-model, FDM, Design), Helijah (Instruments, XMLs)</author>
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">tundra-yasim</aero>
+
+    <startup>
+      <splash-texture>Aircraft/EchoAirTundra/splash.png</splash-texture>
+    </startup>
+
+    <help>
+      <title>EchoAir Tundra</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+    </help>
+
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 1 </cockpit>
+      <model type="int">   3 </model>
+    </rating>
+ <view>
+   <internal archive="y">true</internal>
+   <config>
+     <x-offset-m archive="y">-0.3237</x-offset-m><!--blender y-->
+     <y-offset-m archive="y">0.1512</y-offset-m><!-- blender z-->
+     <z-offset-m archive="y">-2.0025</z-offset-m><!-- blender x -->
+     <pitch-offset-deg>-5</pitch-offset-deg>
+   </config>
+  </view>  
+<view n="101">
+    <name>Passenger Left View</name>
+    <type>lookfrom</type>
+    <internal type="bool">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx><!--
+      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+      <default-field-of-view-deg type="double">80.0</default-field-of-view-deg>
+      <default-pitch-deg type="double">0</default-pitch-deg>
+      <default-heading-deg type="double">0</default-heading-deg>
+      <front-direction-deg type="double">0</front-direction-deg>
+      <front-left-direction-deg type="double">45</front-left-direction-deg>
+      <left-direction-deg type="double">90</left-direction-deg>
+      <back-left-direction-deg type="double">135</back-left-direction-deg>
+      <back-direction-deg type="double">180</back-direction-deg>
+      <back-right-direction-deg type="double">225</back-right-direction-deg>
+      <right-direction-deg type="double">270</right-direction-deg>
+      <front-right-direction-deg type="double">315</front-right-direction-deg>-->
+     <x-offset-m archive="y">0.3237</x-offset-m><!--blender y-->
+     <y-offset-m archive="y">0.1512</y-offset-m><!-- blender z-->
+     <z-offset-m archive="y">-2.0025</z-offset-m><!-- blender x -->
+     <pitch-offset-deg>-15</pitch-offset-deg>
+   </config>
+  </view>
+<view n="102">
+    <name>Passenger Right View</name>
+    <type>lookfrom</type>
+    <internal type="bool">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx><!--
+      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+      <default-field-of-view-deg type="double">80.0</default-field-of-view-deg>
+      <default-pitch-deg type="double">0</default-pitch-deg>
+      <default-heading-deg type="double">0</default-heading-deg>
+      <front-direction-deg type="double">0</front-direction-deg>
+      <front-left-direction-deg type="double">45</front-left-direction-deg>
+      <left-direction-deg type="double">90</left-direction-deg>
+      <back-left-direction-deg type="double">135</back-left-direction-deg>
+      <back-direction-deg type="double">180</back-direction-deg>
+      <back-right-direction-deg type="double">225</back-right-direction-deg>
+      <right-direction-deg type="double">270</right-direction-deg>
+      <front-right-direction-deg type="double">315</front-right-direction-deg>-->
+     <x-offset-m archive="y">-0.3</x-offset-m><!--blender y-->
+     <y-offset-m archive="y">0.67</y-offset-m><!-- blender z-->
+     <z-offset-m archive="y">0.1192</z-offset-m><!-- blender x -->
+     <pitch-offset-deg>-15</pitch-offset-deg>
+   </config>
+  </view>
+     <view n="103">
+    <name>Copilot View</name>
+    <type>lookfrom</type>
+    <internal type="bool">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx><!--
+      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+      <default-field-of-view-deg type="double">80.0</default-field-of-view-deg>
+      <default-pitch-deg type="double">0</default-pitch-deg>
+      <default-heading-deg type="double">0</default-heading-deg>
+      <front-direction-deg type="double">0</front-direction-deg>
+      <front-left-direction-deg type="double">45</front-left-direction-deg>
+      <left-direction-deg type="double">90</left-direction-deg>
+      <back-left-direction-deg type="double">135</back-left-direction-deg>
+      <back-direction-deg type="double">180</back-direction-deg>
+      <back-right-direction-deg type="double">225</back-right-direction-deg>
+      <right-direction-deg type="double">270</right-direction-deg>
+      <front-right-direction-deg type="double">315</front-right-direction-deg>-->
+     <x-offset-m archive="y">0.3</x-offset-m><!--blender y-->
+     <y-offset-m archive="y">0.67</y-offset-m><!-- blender z-->
+     <z-offset-m archive="y">-1.0729</z-offset-m><!-- blender x -->
+     <pitch-offset-deg>-15</pitch-offset-deg>
+   </config>
+  </view>
+  <fuel-fraction>1</fuel-fraction>
+
+    <sound>
+      <path archive="y">Aircraft/EchoAirTundra/Sounds/sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/EchoAirTundra/Models/tundra.xml</path>
+      <show-immat type="bool">1</show-immat>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <config>
+        <show-pilot type="bool">       1 </show-pilot>
+        <show-copilot type="bool">     0 </show-copilot>
+        <show-yokes type="bool">       1 </show-yokes>
+        <glass-reflection type="bool"> 1 </glass-reflection>
+        <light-cone type="bool">       0 </light-cone>
+        <details-high type="bool">     1 </details-high>
+      </config>
+      <door-positions>
+        <crew>
+          <position-norm>0</position-norm>
+        </crew>
+        <passenger>
+          <position-norm>0</position-norm>
+        </passenger>
+      </door-positions>
+    </model>
+
+    <flaps>
+      <setting> 0.00 </setting>
+      <setting> 0.3 </setting> <!-- 30 deg -->
+      <setting> 0.9 </setting> <!-- 90 deg -->
+    </flaps>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"/>                             <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="8" alias="/sim/model/show-immat"/>                      <!--  8 Show immat -->
+        <int type="int" n="10" alias="controls/armament/trigger"/>                 <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/systems/electrical/outputs/nav-lights"/>
+        <float n="4" alias="/systems/electrical/outputs/landing-lights"/>
+        <float n="5" alias="/systems/electrical/outputs/taxi-lights"/>
+        <float n="6" alias="/systems/electrical/outputs/strobe-lights"/>
+        <float n="7" alias="/systems/electrical/volts"/>
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <menubar include="Dialogs/tundra-menu.xml"/>
+    <checklists include="Dialogs/checklist/checklists.xml"/>
+
+   
+
+    <weight n="0">
+        <name>Pilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>100</min-lb>
+    </weight>
+
+    <weight n="1">
+        <name>Copilot</name>
+        <weight-lb>200</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+        <name>Pax</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="3">
+        <name>Cargo</name>
+        <weight-lb>0</weight-lb>
+        <max-lb>250</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <systems>
+      <electrical>
+        <path></path>
+      </electrical>
+    </systems>
+
+  </sim>
+<instrumentation>
+
+    <comm n="0">
+      <power-btn type="bool">false</power-btn>
+      <volume type="double">0</volume>
+    </comm>
+    <nav n="0">
+      <power-btn type="bool">false</power-btn>
+      <volume type="double">0</volume>
+    </nav>
+
+  </instrumentation>
+
+  <controls>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+    <electric>
+      <battery-switch type="bool">false</battery-switch>
+    </electric>
+    <throttle-coupled type="bool">true</throttle-coupled>
+  </controls>
+ 
+ <nasal>
+    <doors>
+      <file>Nasal/doors.nas</file>
+    </doors>
+<canard>
+	<file>Nasal/light.nas</file>
+      <file>Nasal/liveries.nas</file>
+	<file>Nasal/tundra.nas</file>
+</canard>
+  </nasal>
+</PropertyList>
+
